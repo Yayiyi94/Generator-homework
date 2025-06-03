@@ -56,6 +56,35 @@ form {
   padding: 10px;
 }
 
+.hidden {
+  display: none;
+}
+
+.text-generating {
+  width: 200px;
+  height: 50px;
+  padding: 15px;
+  text-align: center;
+  line-height: 50px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+div .text-generating {
+  color: white;
+  animation: blink 1s linear infinite;
+}
+
 a {
   color: rgba(132, 18, 157, 0.3);
 }
