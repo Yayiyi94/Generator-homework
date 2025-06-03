@@ -3,38 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Spanish Poem Generator</h1>
-      <h2>Generator that helps writing an poem based on one word</h2>
-    </header>
-    <main></main>
-    <input
-      type="text"
-      placeholder="Write the topic of the poem"
-      autofocus
-      required
-      autocomplete="off"
-    />
-    <input type="submit" value="Next" />
+    <div class="container">
+      <header>
+        <h1>Spanish Poem Generator</h1>
+        <h2>Generator that helps writing an poem based on one word</h2>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Write the topic of the poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="promt-input"
+          />
+          <input type="submit" value="Generate" class="submit-button" />
+        </form>
 
-    <div>
-      <br />
-      "Here will be the poem"
+        <div class="poem-ai">
+          "Here will be the poem"
+          <br />
+          "Here will be the poem"
+          <br />
+          "Here will be the poem"
+        </div>
+      </main>
+      <footer>
+        <br />
+        Coded by Yadira DLTR, code hosted on
+        <a href="https://github.com/Yayiyi94/Generator-homework" target="_blank"
+          >GitHub</a
+        >
+        and website hosted on
+        <a href="https://generator-ydltr.netlify.app" target="_blank">Netfly</a>
+      </footer>
+      <script src="src/script.js"></script>
     </div>
-
-    <footer>
-      <br />
-      Coded by Yadira DLTR, code hosted on
-      <a href="https://github.com/Yayiyi94/Generator-homework" target="_blank"
-        >GitHub</a
-      >
-      and website hosted on
-      <a href="https://generator-ydltr.netlify.app" target="_blank">Netfly</a>
-    </footer>
-    <script src="src/script.js"></script>
   </body>
 </html>
