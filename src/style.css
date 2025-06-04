@@ -1,16 +1,31 @@
 body {
-  background-color: #147088;
-  background-image: radial-gradient(#a1c5cf 0.75px, transparent 0.75px),
-    radial-gradient(#a1c5cf 0.75px, #147088 0.75px);
-  background-size: 30px 30px;
-  background-position: 0 0, 15px 15px;
-  font-family: "Playwrite DK Loopet", cursive;
+  background: #000000;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/281/original/jez-timms-8muUTAmcWU4-unsplash.jpg?1749004337");
+  background-size: 800px;
+  background-position-y: 380px;
+  background-repeat: no-repeat;
+  font-family: "Aboreto", system-ui;
 }
 
 h1 {
-  border-bottom: thick double white;
+  font-family: "Brush Script MT", cursive;
+  padding: 30px;
+  margin: 0px 30px 0px 30px;
+  font-size: 60px;
+}
+
+.image-icon {
+  width: 100px; /* Set the width of the image */
+  height: auto; /* Keep the aspect ratio */
+}
+
+h2 {
+  border-top: thick double rgb(140, 140, 140);
+  border-bottom: thick double rgb(140, 140, 140);
   padding: 20px;
   margin: 0px 30px 0px 30px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 form {
@@ -18,8 +33,9 @@ form {
 }
 
 .prompt-input {
-  background-color: white;
-  color: #147088;
+  text-align: center;
+  background-color: #400303;
+  color: #a32a2a;
   border: none;
   border-radius: 6px;
   width: 25%;
@@ -27,30 +43,49 @@ form {
 }
 
 .submit-button {
-  background-color: #147088;
+  font-family: "Aboreto", system-ui;
+  background-color: #400303;
   color: white;
   border: none;
   border-radius: 6px;
   margin-left: 8px;
-  width: 11%;
+  width: 15%;
   padding: 8px;
+  transition: all 300ms ease-in-out;
+}
+
+.submit-button:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .container {
   text-align: center;
-  color: #147088;
-  background-color: #a1c5cf;
-  border-radius: 20px;
+  color: #751212;
+  background-color: rgba(0, 0, 0, 0.8);
   max-width: 800px;
-  margin: 20px auto;
+  margin: 50px auto;
+
+  border-image-slice: 1020 869 1175 796;
+  border-image-width: 46px 0px 46px 0px;
+  border-image-outset: 45px 38px 45px 30px;
+  border-image-repeat: round;
+  border-style: solid;
+  border-image-source: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/279/original/vintage-border-white.png?1748998119");
 }
 .poem-ai {
+  font-family: "Playwrite DK Loopet", cursive;
+
   font-size: 15px;
   text-align: left;
-  color: #a1c5cf;
-  background-color: #147088;
-  border-left: 11px solid #ffffff;
-  border-right: 11px solid #ffffff;
+  color: #fff;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/272/original/cropped-TGL-header-2.jpg?1748987576);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-left: thick double white;
+  border-right: thick double white;
+
   max-width: 400px;
   margin: 20px auto;
   padding: 10px;
@@ -81,15 +116,16 @@ form {
 }
 
 div .text-generating {
-  color: white;
+  color: #751212;
   animation: blink 1s linear infinite;
 }
 
 a {
-  color: rgba(132, 18, 157, 0.3);
+  font-weight: 900;
+  color: rgba(228, 54, 54, 0.3);
 }
 
 footer {
   font-size: 13px;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(217, 217, 217, 0.3);
 }

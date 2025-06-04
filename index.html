@@ -6,7 +6,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap"
       rel="stylesheet"
@@ -17,8 +22,23 @@
   <body>
     <div class="container">
       <header>
-        <h1>Spanish Poem Generator</h1>
-        <h2>Generator that helps writing an poem based on one word</h2>
+        <div>
+          <h1>
+            <img
+              class="image-icon"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/289/original/skullred-1.png?1749007564"
+              alt="Description of GIF"
+            />Gothic Poem Generator<img
+              class="image-icon"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/290/original/skullred-2.png?1749007571"
+              alt="Description of GIF"
+            />
+          </h1>
+        </div>
+
+        <h2>
+          Generator that helps writing an gothic poem based on what you write
+        </h2>
       </header>
       <main>
         <form id="poem-generator-form">
@@ -30,6 +50,15 @@
             autocomplete="off"
             class="prompt-input"
             id="prompt-input"
+          />
+          <input
+            type="number"
+            placeholder="How many lines do you want?"
+            autofocus
+            required
+            autocomplete="off"
+            class="prompt-input"
+            id="prompt-number-input"
           />
           <input type="submit" value="Generate" class="submit-button" />
         </form>
